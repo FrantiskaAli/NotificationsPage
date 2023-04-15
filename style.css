@@ -96,6 +96,8 @@ span{
 }
 .message:hover{
     cursor: pointer;
+}
+.message:focus{
     background-color:var(--Light-grayish-blue-2);
 }
 time{
