@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
 :root{
     font-family: 'Plus Jakarta Sans', sans-serif;
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
 }
 body{
-   background-color: hsl(211, 68%, 94%);
+   background-color: var(--Very-light-grayish-blue);
    display: flex;
    justify-content:center;
    align-items: center;
@@ -27,14 +35,14 @@ h1{
     
 }
 #unread-count{
-    background-color:hsl(219, 12%, 42%) ;
+    background-color:var(--Blue) ;
     color: white;
     padding:2% 5%;
     border-radius: 5px;
     font-size:1.2rem;
 }
 p{
-    color: gray;
+    color: var(--Dark-grayish-blue);
 }
 .notification{
     display:flex;
@@ -68,18 +76,18 @@ span{
     color:black;
 }
 .post{
-    color: rgb(112, 110, 110);
+    color: var(--Dark-grayish-blue);
 }
 .group{
-    color:hsl(224, 21%, 14%);
+    color:var(--Blue);
 }
 .name:hover, .post:hover, .group:hover, #mark-as-read:hover{
     cursor: pointer;
-    color:blue;
+    color:var(--Blue);
 } 
 
 .message{
-    border:2px solid lightgray;
+    border:2px solid var(--Very-light-grayish-blue);
     border-radius:5px;
     margin:2% 0;
     padding:2%;
@@ -88,14 +96,14 @@ span{
 }
 .message:hover{
     cursor: pointer;
-    background-color:hsl(206, 65%, 85%);
+    background-color:var(--Light-grayish-blue-2);
 }
 time{
     font-weight: 300;
     color:hsl(219, 14%, 63%);
 }
 .unread{
-    background-color: hsl(211, 68%, 94%);
+    background-color:var(--Very-light-grayish-blue);
 }
 .unread-dot{
     color:hsl(1, 90%, 64%);
