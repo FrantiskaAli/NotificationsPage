@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
+:root{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body{
+   background-color: hsl(211, 68%, 94%);
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+
+}
+#main-card{
+    background-color: white;
+    width:40%;
+    border-radius:15px;
+    padding:1% 5%;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+h1{
+    font-weight: 800;
+    white-space: nowrap;
+    
+}
+#unread-count{
+    background-color:hsl(219, 12%, 42%) ;
+    color: white;
+    padding:2% 5%;
+    border-radius: 5px;
+    font-size:1.2rem;
+}
+p{
+    color: gray;
+}
+.notification{
+    display:flex;
+    align-items: flex-start;
+    width:100%;
+    margin: 1% 0;
+    padding: 2%;
+    border-radius: 10px;
+}
+.profile-picture{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.post-picture{
+    width: 50px;
+    height: 50px;
+    margin-left:auto;
+    margin-right: 5px;
+}
+.notification-content{
+    margin-top:-2%;
+    margin-left: 2%;
+    line-height: 1rem;
+    padding-top:0;
+}
+span{
+    font-weight: 800;
+}
+.name{
+    color:black;
+}
+.post{
+    color: rgb(112, 110, 110);
+}
+.group{
+    color:hsl(224, 21%, 14%);
+}
+.name:hover, .post:hover, .group:hover, #mark-as-read:hover{
+    cursor: pointer;
+    color:blue;
+} 
+
+.message{
+    border:2px solid lightgray;
+    border-radius:5px;
+    margin:2% 0;
+    padding:2%;
+    line-height: normal;
+    color:gray;
+}
+.message:hover{
+    cursor: pointer;
+    background-color:hsl(206, 65%, 85%);
+}
+time{
+    font-weight: 300;
+    color:hsl(219, 14%, 63%);
+}
+.unread{
+    background-color: hsl(211, 68%, 94%);
+}
+.unread-dot{
+    color:hsl(1, 90%, 64%);
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+@media (max-width: 930px) {
+    #main-card{
+        width:80%;
+  
+    }
+  }
+  @media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+        font-size:0.8rem;
+    }
+    #main-card{
+        width:75vw;
+        padding: 5% 20%;
+    }
+    header{
+        font-size:0.7rem;
+    }
+    .notification{
+        padding:5%;
+    }
+    .message{
+        padding:5%;
+    }
+  }
